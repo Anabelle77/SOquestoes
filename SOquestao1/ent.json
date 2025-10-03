@@ -1,0 +1,20 @@
+{
+    "specversion": "1.0",
+    "challengeid": "rrfcssjfsdemo",
+    "metadata": {
+        "contextswitchcost": 1,
+        "throughputwindowT": 100,
+        "algorithms": ["FCFS", "SJF", "RR"],
+        "rrquantums": [1, 2, 4, 8, 16]
+    },
+    "workload": {
+        "timeunit": "ticks",
+        "processes": [
+            { "pid": "P01", "arrivaltime": 0, "bursttime": 5 },
+            { "pid": "P02", "arrivaltime": 1, "bursttime": 17 },
+            { "pid": "P03", "arrivaltime": 2, "bursttime": 3 },
+            { "pid": "P04", "arrivaltime": 4, "bursttime": 22 },
+            { "pid": "P05", "arrivaltime": 6, "bursttime": 7 }
+        ]
+    }
+}
